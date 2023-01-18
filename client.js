@@ -43,15 +43,84 @@ console.log('array of employee data: ',  employees );
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-
-
+function selectIndividualEmployees (employees) {
+for (let i = 0; i < employees.length; i++) {
+  calculateIndividualEmployeeBonus (employees[i]);
+  console.log(employees[i].name);
+}
+}
+selectIndividualEmployees(employees);
 
 // This function will calculate 1 employee's bonus!
 //
 function calculateIndividualEmployeeBonus( employee ) {  
   // your logic here
+  let baseBonus = employee.reviewRating * employee.annualSalary
+  let yearAdjustment = if employee.employeeNumber.length >= 4 {
+    employee.annualSalary * employees.reviewRating + 0.05
+  let incomeAdjustment =  if employee.annualSalary > 65000 {
+    newBonus = baseBonus * 0.01
+  }
+  baseBonus > 0.13 || < 0 
+  }
+
+
+  // function getBaseBonus (rating) {
+  //   switch (rating) {
+  //     case 2:
+  //       return 0;
+  //       break;
+  //     case 3:
+  //       return  employee.annualSalary * 0.04
+  //       break;
+  //       case 4:
+  //       return employee.annualSalary * 0.06
+  //       break;
+  //       case 5 
+
+  //     default:
+  //       break;
+    }
+  if rating < 2 {
+    return bonus = 0;
+  } else if {
+    rating = 3 {
+      return bonus = employee.annualSalary * 0.04
+    } else if {
+      rating = 4 {
+        return bonus = employee.annualSalary * 0.06
+      } else if {
+        rating = 5 {
+          return bonus = employee.annualSalary * 0.1
+        }
+      }
+    }
+  }
+}
+
   
+  }
+
+  function baseBonusCalculation (rating){
+    let basePercent;
+    return 
+  }
+  
+  function yearAdjustment (employeeNumber) {
+
+  }
+
+  function incomeAdjustment (annualSalary) {
+
+  }
+
+  return newEmployeeObject (name, bonusPercentage, totalCompensation, totalBonus)
+ 
+  // return newObject
+  //name
+  //bonusPercentage
+  //totalCompensation
+  //totalBonus
+
   
   // return new object with bonus results
-
-}
